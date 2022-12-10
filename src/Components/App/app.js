@@ -6,6 +6,12 @@ import AppSearch from "../search-panel/app";
 import "./app.css";
 
 const App = () => {
+  const data = [
+    { name: "Golden Time", viewers: 999, favourite: false },
+    { name: "Al-Kharazmiy", viewers: 999, favourite: true },
+    { name: "Avatar", viewers: 399, favourite: false },
+    { name: "Uzbek", viewers: 999, favourite: false },
+  ];
   return (
     <div className="app font-monospace">
       <div className="context">
@@ -16,7 +22,7 @@ const App = () => {
 
           <AppFilter />
         </div>
-        <MovieList />
+        <MovieList data={data} />
         <AddMovie />
       </div>
     </div>
