@@ -29,22 +29,23 @@
 .list-group-item .btn-cookie {
   color: #e09f3e;
 }
-.list-group-item .btn-trash {
+.list-group-item .fa-trash {
   color: #e5383b;
 }
-.list-group-item .fa-stap {
+.list-group-item .fa-star {
   width: 35px;
   height: 35px;
   font-size: 16px;
   text-align: center;
   line-height: 35px;
   transition: 0.3s all;
-  transform: translate(30px);
+  transform: translateX(30px);
   opacity: 0;
 }
 .list-group-item.like .fa-star {
   opacity: 1;
-  transform: translate(0px);
+  transform: translateX(0px);
+  color: #e09f3e;
 }
 
 .list-group-item.favourite .list-group-item-label,

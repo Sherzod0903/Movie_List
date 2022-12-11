@@ -1,8 +1,7 @@
 import MovieListItem from "../MovieListitem/app";
 import "./movie-list.css";
 
-const MovieList = ({ data }) => {
-  console.log(data);
+const MovieList = ({ data, onDelete }) => {
   return (
     <ul className="movie-list">
       {data.map((item) => (
@@ -11,6 +10,7 @@ const MovieList = ({ data }) => {
           name={item.name}
           viewers={item.viewers}
           favourite={item.favourite}
+          onDelete={() => onDelete(item.id)}
         />
       ))}
     </ul>
